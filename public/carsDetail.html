@@ -1,0 +1,39 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<div class="row">
+      		<div class="col-md-12">
+      		    <div class="row" style="margin-top:10px;">
+                    <div class="col-sm-7">
+                        <h1>{{data.make | uppercase}} {{data.model | uppercase}}</h1>
+                        <p class="lead">{{data.shortDesc}} 
+                            
+                            <!-- <span class="label label-default" title="">Bootstrap v3.1.1</span> -->
+                            
+                        </p>
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{{data.imgUrl}}" class="img-thumbnail img-responsive" alt="{{data.make | uppercase}} {{data.model | uppercase}} image" /></a></div>
+                    <div class="col-sm-6">
+                        
+                        <p class="text-muted"><small>{{data.make | uppercase}} {{data.model | uppercase}}</small></p>
+                        <table class="table">
+                            <!-- <thead>
+                                <tr>
+                                    <th ng-repeat='(key, value) in data.attributes'>{{key | uppercase}}</th>
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr ng-repeat = "(key,value) in data.attributes">
+                                    <td>{{key | uppercase}}</td>
+                                    <td ng-hide="key=='price'">{{value | uppercase}}</td>
+                                    <td ng-hide="key!='price'">{{value | currency}}</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://localhost:8080/login">BUY</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <p class="text-muted"><small>Permalink<br><a href="/bootstrap-template/e-commerce">http://bootstrapzero.com/bootstrap-template/e-commerce</a></small></p> -->
+                    </div>
+                </div>

@@ -1,0 +1,37 @@
+
+
+<div>
+	<h3>{{category | uppercase}}</h3>
+		    	<!-- <div ng-repeat='item in productList'>
+		    	
+		    	   	<a href="#/store/cars/{{item._id}}">
+		    	   	<span ng-repeat='(key, value) in item' ng-hide="key=='_id' || key=='__v'">
+		    			{{key}} : {{value}}
+		    		</span>
+		    		</a>
+		    	</div>
+		    
+    	</div> -->
+<div class="container" id="main" >
+	<div class="row">     
+     <div ng-repeat="item in productList" class="col-sm-4">
+      <a href="#/store/{{category | lowercase}}/{{item._id}}" style="text-decoration: none">
+        <div class="panel panel-default" >
+          <div class="panel-thumbnail"><img src="{{item.imgUrl}}" class="img-responsive"></img></div>
+          <div class="panel-body" >
+            <p class="lead" ng-hide="category!='cars'">{{item.make | uppercase}} {{item.model | uppercase}}</p>
+            <p class="lead" ng-hide="category!='televisions'">{{item.make | uppercase}}</p>
+            <p ng-hide="category!='televisions'">{{item.shortDesc | uppercase}}</p>
+            <p class="lead" ng-hide="category!='routers'">{{item.make | uppercase}}</p>
+            <p ng-hide="category!='routers'">{{item.shortDesc | uppercase}}</p>
+            <p>{{item.attributes.price | currency}}</p>
+          </div>
+        </div>
+	  </a>
+        
+      </div><!--/col-->
+    <br>
+    
+    
+      
+</div>

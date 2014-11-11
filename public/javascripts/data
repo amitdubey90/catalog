@@ -1,0 +1,82 @@
+data
+{'make':'mercedes benz','model':'CLA 250', 'imgUrl':'http://i.imgur.com/bQU2sGX.jpg','shortDesc':'The 2014 CLA250 Coupe', attributes':{'price':29900,'Passenger capacity':5,'Trunk capacity':'13.1 cu ft', 
+'Transmission': 'type7-speed DCT dual-clutch automatic','Engine':'2.0L turbo-4Power208 hp @ 5,500 rpm','Acceleration': '0-60 mph6.9 sec', 'City fuel economy':'26 mpg'}}
+
+
+{'make':'Ford mustang', 'model':'Shelby GT500', 'imgUrl':'http://i.imgur.com/EVEHytm.jpg', 'shortDesc':'The 2014 Shelby GT500',attributes':{'price':32925,'Engine Type' : '5.0L V8','EPA-Estimated Ratings': 'GT manual Fastback: 15 city/25 hwy','Max Seating Capacity':	4,'Drive Type':'Rear Wheel Drive','Horsepower':'300 hp @ 6500 rpm (3.7L V6)'}}
+ 
+
+ {'make':'Honda', 'model':'Accord EX-LV-6', 'igmUrl':'http://i.imgur.com/xzxkjTU.jpg', 'shortDesc':'Accord Coupe EX-L V-6'}
+db.cars.update({_id:ObjectId("543257923828b3f424930dbc")}, {$set:{attributes:{'price':32400,'horsepower' :'278-hp (SAE Net)', 'Engine' : '3.5-Liter, 24-Valve, SOHC i-VTEC® V-6 Engine','Sound system':'Active Sound Control'}}})
+
+
+db.cars.update({_id : ObjectId("543266123828b3f424930dbd"),},{$set:{attributes:{'price':19950, 'engine':'1.6 - Liter 16– Valve Inline 4 - cyl', 'drive system':'ALL4 All Wheel Drive System','transmission':'6-Speed Automatic Transmission','brakes':'4-Wheel Anti-Lock Disc Brakes (front vented/rear solid)'}}})
+
+db.cars.update({"_id" : ObjectId("543257923828b3f424930dbc")}, {$set:{imgUrl:"http://i.imgur.com/mtfQ8HR.jpg?1"}})
+
+db.televisions.insert({'make':'Samsung','model':'UN32EH4003FXZA', 'imgUrl':'http://i.imgur.com/jQDI0sg.jpg', 'shortDesc':'32 inch Class (31-1/2 inch Diag.) - LED - 720p - 60Hz - HDTV'})
+
+'Warranty Terms - Parts':'1 year','Warranty Terms - Labor':'1 year','Width':'29-1/8"','Weight':'13.2 lbs. with stand (11.9 lbs. without)', 'TV Type':'LED Flat-Panel', 'Screen Size Class':'32"', 'Screen Size (Measured Diagonally)': '31-1/2"	Size of the screen, in inches, measured diagonally from corner to corner', 'Vertical Resolution':'720p'
+
+db.televisions.update({ "_id" : ObjectId("543304949790f4fe6dd174ec")},{$set:{attributes:{'price':219.99,'Warranty Terms - Parts':'1 year','Warranty Terms - Labor':'1 year','Width':'29-1/8"','Weight':'13.2 lbs. with stand (11.9 lbs. without)', 'TV Type':'LED Flat-Panel', 'Screen Size Class':'32"', 'Screen Size (Measured Diagonally)': '31-1/2"	Size of the screen, in inches, measured diagonally from corner to corner', 'Vertical Resolution':'720p'}}})
+
+db.televisions.insert({'make':'LG','model':'42LB5600', 'imgUrl':'http://i.imgur.com/xsNL4PM.jpg', 'shortDesc':'42" Class (41-9/10" Diag.) - LED - 1080p - 60Hz - HDTV'})
+
+
+db.televisions.update({ "_id" : ObjectId("54330ce09790f4fe6dd174ed")},{$set:{attributes:{'price':399.99,'Warranty Terms - Parts':	'1 year limited', 'Warranty Terms - Labor':'1 year limited','Width':'37-7/8"', 'Weight':'20.9 lbs. with stand (20.3 lbs. without)','TV Type':'LED Flat-Panel', 'Screen Size Class':'42"',	
+'Screen Size (Measured Diagonally)':'41-9/10"	Size of the screen, in inches, measured diagonally from corner to corner','Vertical Resolution':'1080p'}}})
+
+db.televisions.insert({'make':'Sony','model':'KDL40W600B', 'imgUrl':'http://i.imgur.com/houq3An.jpg?1', 'shortDesc':'BRAVIA - 40" Class (40" Diag.) - LED - 1080p - 60Hz - Smart - HDTV'})
+
+
+db.televisions.update({ "_id" : ObjectId("54330ef89790f4fe6dd174ee")},{$set:{attributes:{'price':399.99,'Warranty Terms - Parts':'1 year limited',
+'Warranty Terms - Labor':'1 year limited',
+'Width':'36-1/2"',
+'Weight':'17.5 lbs. with stand (16.3 lbs. without)',
+'TV Type':'LED Flat-Panel',	
+'Screen Size Class':'40"', 'Screen Size (Measured Diagonally)':'40" Size of the screen, in inches, measured diagonally from corner to corner','Vertical Resolution':'1080p'}}})
+
+
+db.televisions.insert({'make':'Samsung','model':'UN55HU7250FXZA', 'imgUrl':'http://i.imgur.com/yMwBXLT.jpg', 'shortDesc':'55" Class (54-5/8" Diag.) - LED - Curved - 4K Ultra HD TV (2160p) - 120Hz - Smart - HDTV'})
+
+
+db.televisions.update({ "_id" : ObjectId("54330ce09790f4fe6dd174ed")},{$set:{attributes:{'price':1799.99,'Warranty Terms - Parts':'1 year limited',
+'Warranty Terms - Labor':'1 year limited',
+'Width':'48-1/2"',
+'Weight':'48.1 lbs. with stand (41.2 lbs. without)',
+'TV Type':'LED Curved',	
+'Screen Size Class':'52"', 'Screen Size (Measured Diagonally)':'54-5/8"" Size of the screen, in inches, measured diagonally from corner to corner','Vertical Resolution':'2160p (4K)'}}})
+
+
+
+db.routers.insert({'make':'NETGEAR','model':'WNDR3400-100NAS','shortDesc':'RangeMax Dual-Band Wireless-N Router with 4 Ethernet Ports'})
+
+db.routers.update({"_id" : ObjectId("54333c1f9790f4fe6dd174f3")},{$set:{'attributes':{'price':69.99,'Warranty Terms - Parts':'2 years limited',
+
+'Height':'7.5 inches',
+'Width':'2.5 inches',
+'Depth':'2.5 inches',
+'Weight':'1.2 pounds',
+'Assembly Required':'false',
+'Speed':'Up to 300 Mbps',
+'Printer Interface':'USB 2.0',
+'Number of LAN Ports':'4'}}})
+
+
+
+db.routers.insert({'make':'BELKIN','model':'F9K1102','shortDesc':' N600 Dual-Band Wireless-N+ Router with 4-Port Switch and USB Port', 'imgUrl':'http://i.imgur.com/jgY13LR.jpg'})
+
+
+db.routers.update({"_id" : ObjectId("54332f9b9790f4fe6dd174f0")},{$set: {'imgUrl':'http://i.imgur.com/vXWHRco.jpg'}})
+
+
+Warranty Terms - Parts	2 years limited	
+Height	7.5 inches	
+Width	2.5 inches	
+Depth	2.5 inches	
+Weight	1.2 pounds	
+Assembly Required	false	
+Speed	Up to 300 Mbps	How fast data is transferred over a network.
+Printer Interface	USB 2.0	
+Interface Slot Type	USB 2.0	Refers to the type of slot on a motherboard that an upgrade card is compatible with. Common types of slots include PCI, PCI Express and AGP.
+Number of LAN Ports	4
